@@ -305,7 +305,6 @@ while (held == "minecraft:diamond_hoe") {
     } else if (rightnotdirt) {
         oddlayer = true
     }
-    i = 0
     if (oddlayer == true) {
         while (held == "minecraft:diamond_hoe" && PlayerXPos < 78.000) {
             // walk down first row
@@ -495,7 +494,6 @@ while (held == "minecraft:diamond_hoe") {
     var roundPlayerXPos = PlayerXPos.toFixed(1)
     var PlayerZPos = Player.getPlayer().getZ()
     var roundPlayerZPos = Math.floor(PlayerZPos)
-    i = 0
     leftdirt = false
     rightdirt = false
     leftnotdirt = false

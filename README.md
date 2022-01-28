@@ -21,7 +21,8 @@
 - make sure printer is off otherwise you will be banned, now just build the farm manually with a builders wand, infinite dirt wand, magical water bucket, and sugar cane
 14. Once on your island press J to start the macro (will only work if you're holding a variant of a diamond hoe eg. sugar cane hoe, regular diamond hoe, NOT A ROOKIE HOE)
 15. To stop the current macro switch your hotbar slot to an EMPTY slot and the script will stop within 100ms
-16. Now everything should be setup, if you have any more questions surrounding the macro msg egom#0555 on discord
+16. If you are trying to run multiple installations of this then use MultiMc https://multimc.org/
+17. Now everything should be setup, if you have any more questions surrounding the macro msg egom#0555 on discord
 
 # Extra info
 - The number being logged in chat is the amount of rows the player has completed - if people actually download this then ill make it look nice + do actual changes to this mod so that it functions better but right now i really dont care and this feature is not toggleable at the moment 

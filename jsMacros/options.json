@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "core": {
+    "maxLockTime": 500,
+    "defaultProfile": "default",
+    "profiles": {
+      "default": [
+        {
+          "triggerType": "EVENT",
+          "event": "RecvMessage",
+          "scriptFile": "LobbyChat.js",
+          "enabled": true
+        },
+        {
+          "triggerType": "EVENT",
+          "event": "RecvMessage",
+          "scriptFile": "SkyblockChat.js",
+          "enabled": true
+        },
+        {
+          "triggerType": "EVENT",
+          "event": "RecvMessage",
+          "scriptFile": "CannotJoinSkyblock.js",
+          "enabled": true
+        },
+        {
+          "triggerType": "KEY_RISING",
+          "event": "36",
+          "scriptFile": "CaneScript.js",
+          "enabled": true
+        }
+      ]
+    },
+    "extraJsOptions": {}
+  },
+  "client": {
+    "sortMethod": "Enabled",
+    "disableKeyWhenScreenOpen": true,
+    "editorLinterOverrides": {},
+    "editorHistorySize": 20,
+    "editorSuggestions": true,
+    "editorFont": "jsmacros:jetbrainsmono",
+    "externalEditor": false,
+    "externalEditorCommand": "code %MacroFolder %File"
+  }
+}

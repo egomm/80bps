@@ -1,4 +1,5 @@
 i = 0
+JsMacros.runScript("Stuck.js")
 var held = Player.getPlayer().getMainHand().getItemID()
 var PlayerXPos = Player.getPlayer().getX()
 var roundPlayerXPos = PlayerXPos.toFixed(1)

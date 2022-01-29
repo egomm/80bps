@@ -1,5 +1,5 @@
 # Please read
-WARNING: This script was made in under a day and is scuffed - it should work if you manage to set it up correctly
+WARNING: This script was made in under a day and is scuffed - it should work if you manage to set it up correctly - also RGA's 80bps only works when the player has 220 speed or less
 
 1. Download the recommended version of 1.8.9 forge at: https://files.minecraftforge.net/net/minecraftforge/forge/index_1.8.9.html
 2. Once 1.8.9 forge is installed download these mods: 
@@ -21,7 +21,7 @@ WARNING: This script was made in under a day and is scuffed - it should work if 
 12. If you are not using schematica skip to step 14, go to your skyblock island and press escape then go into controls, once in controls scroll down to schematica and bind a control for Load schematic (should be the first one under the sub category schematica), then press escape and press the keybind, now you should be in a menu which says Select schematic file at the top ![2022-01-28_21 42 44](https://user-images.githubusercontent.com/96357544/151515086-820a0834-b841-4327-89dd-0c20a9fb8e86.png) - now click on the schematic labelled as 80bps and press done
 13. Now the schematic should be loaded, open your controls again and bind a key to Manipulate schematic (should be second down), now press escape and press this keybind and move the schematic to X: -80 Y: any value greater than 1, Z: -80 ![image](https://user-images.githubusercontent.com/96357544/151516746-73f3ba12-7ea1-41cd-b9c7-5581f7fcb85b.png)
 - make sure printer is off otherwise you will be banned, now just build the farm manually with a builders wand, infinite dirt wand, magical water bucket, and sugar cane
-14. Once on your island press J to start the macro (will only work if you're holding a variant of a diamond hoe eg. sugar cane hoe, regular diamond hoe, NOT A ROOKIE HOE)
+14. Once on your island press J to start the macro (will only work if you're holding a variant of a diamond hoe eg. sugar cane hoe, regular diamond hoe, NOT A ROOKIE HOE
 15. To stop the current macro switch your hotbar slot to an EMPTY slot and the script will stop within 100ms
 16. If you are trying to run multiple installations of this then use MultiMc https://multimc.org/
 17. Now everything should be setup, if you have any more questions surrounding the macro msg egom#0555 on discord
@@ -30,3 +30,10 @@ WARNING: This script was made in under a day and is scuffed - it should work if 
 - The number being logged in chat is the amount of rows the player has completed - if people actually download this then ill make it look nice + do actual changes to this mod so that it functions better but right now i really dont care and this feature is not toggleable at the moment 
 - If you are wondering why the code is shit its because this code was rushed within a day for a funny test hence the code being formatted horribily and written very very badly (but it works and that's all that matters to me atm)
 - If you get stuck in a block just swap from a diamond hoe to a empty hotbar slot and then swap back to a diamond hoe and press J to start the script
+
+# Patch notes
+- v1.0.0 (January 28th 2022) Initial release
+- v1.0.1 (January 28th 2022) Fixed schematic
+- v1.0.2 (January 28th 2022) Added failsafes for being warped to the hub and being warped to the prototype/main lobby
+- v1.0.3 (January 28th 2022) Added anti stuck
+- v1.0.4 (January 29th 2022) Fixed the last layer of the farm (redid the schematic so the script can function with it) + added better logging for which row the player is on

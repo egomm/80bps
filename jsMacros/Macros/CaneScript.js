@@ -35,27 +35,23 @@ while (held == "minecraft:diamond_hoe") {
     var rightblock = World.getBlock(79, newYPos, 79).getName()
         if (rightblock == "Dirt") {
             rightdirt = true 
-        } else if (rightblock != "End Portal") {
+        } else {
             rightnotdirt = true
-        } else if (rightblock == "End Portal") {
-            oddlayer = true
         }
     }
     if (roundPlayerXPos > 0.0 && roundPlayerZPos < 0) {
     var rightblock = World.getBlock(79, newYPos, -79).getName()
         if (rightblock == "Dirt") {
             rightdirt = true 
-        } else if (rightblock != "End Portal") {
+        } else {
             rightnotdirt = true
-        } else if (rightblock == "End Portal") {
-            oddlayer = true
         }
     }
     if (roundPlayerXPos < 0.0 && roundPlayerZPos > 0) {
     var leftblock = World.getBlock(-79, newYPos, 79).getName()
         if (leftblock == "Dirt") {
             leftdirt = true 
-        } else if (leftblock != "End Portal") {
+        } else {
             leftnotdirt = true
         }
     }
@@ -63,7 +59,7 @@ while (held == "minecraft:diamond_hoe") {
     var leftblock = World.getBlock(-79, newYPos, -79).getName()
         if (leftblock == "Dirt") {
             leftdirt = true 
-        } else if (leftblock != "End Portal") {
+        } else {
             leftnotdirt = true
         }
     }
@@ -146,7 +142,7 @@ while (held == "minecraft:diamond_hoe") {
         var roundPlayerXPos = PlayerXPos.toFixed(1)
         var coordsnextrow = nextrow+7.6
         i = i + 1
-        Chat.log(i)
+        Chat.log(`Rows farmed: ${i}`)
         while (roundPlayerXPos < coordsnextrow && PlayerXPos < 78.000) {
             const inp = Player.createPlayerInput(1, -1, 260, 0, false, false, true);
             Player.addInput(inp)
@@ -226,7 +222,7 @@ while (held == "minecraft:diamond_hoe") {
         var roundPlayerXPos = PlayerXPos.toFixed(1)
         var coordsnextrow = nextrow-9.3
         i = i + 1
-        Chat.log(i)
+        Chat.log(`Rows farmed: ${i}`)
         var held = Player.getPlayer().getMainHand().getItemID()
         while (roundPlayerXPos > coordsnextrow && PlayerXPos > -78.000) {
             const inp = Player.createPlayerInput(1, 1, 130, 0, false, false, true);
@@ -331,7 +327,7 @@ while (held == "minecraft:diamond_hoe") {
             var roundPlayerXPos = PlayerXPos.toFixed(1)
             var coordsnextrow = nextrow+9.3
             i = i + 1
-            Chat.log(i)
+            Chat.log(`Rows farmed: ${i}`)
                     // transition to next row
             while (roundPlayerXPos < coordsnextrow && PlayerXPos < 78.000) {
                 const inp = Player.createPlayerInput(1, 1, 310, 0, false, false, true);
@@ -372,7 +368,7 @@ while (held == "minecraft:diamond_hoe") {
             var roundPlayerXPos = PlayerXPos.toFixed(1)
             var coordsnextrow = nextrow+7.6
             i = i + 1
-            Chat.log(i)
+            Chat.log(`Rows farmed: ${i}`)
             // transition to next row
                 while (roundPlayerXPos < coordsnextrow && PlayerXPos < 78.000) {
                 const inp = Player.createPlayerInput(1, -1, 260, 0, false, false, true);
@@ -427,7 +423,7 @@ while (held == "minecraft:diamond_hoe") {
             var roundPlayerXPos = PlayerXPos.toFixed(1)
             var coordsnextrow = nextrow-7.6
             i = i + 1
-            Chat.log(i)
+            Chat.log(`Rows farmed: ${i}`)
             var held = Player.getPlayer().getMainHand().getItemID()
             // first transition
             while (roundPlayerXPos > coordsnextrow && PlayerXPos > -78.000) {
@@ -469,7 +465,7 @@ while (held == "minecraft:diamond_hoe") {
             var roundPlayerXPos = PlayerXPos.toFixed(1)
             var coordsnextrow = nextrow-9.3
             i = i + 1
-            Chat.log(i)
+            Chat.log(`Rows farmed: ${i}`)
             var held = Player.getPlayer().getMainHand().getItemID()
             // second transition
             while (roundPlayerXPos > coordsnextrow && PlayerXPos > -78.000) {

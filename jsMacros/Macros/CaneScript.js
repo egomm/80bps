@@ -638,5 +638,6 @@ while (held == "minecraft:diamond_hoe") {
             var PlayerZPos = Player.getPlayer().getZ()
             var roundPlayerZPos = Math.floor(PlayerZPos)
         }
+        Time.sleep(250)
     }
 }

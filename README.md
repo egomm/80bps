@@ -1,5 +1,6 @@
 # Please read
-WARNING: This script was made in under a day and is VERY scuffed + Bug Fixed coming 29/01
+WARNING: This script was made in under a day and is scuffed - it should work if you manage to set it up correctly
+
 1. Download the recommended version of 1.8.9 forge at: https://files.minecraftforge.net/net/minecraftforge/forge/index_1.8.9.html
 2. Once 1.8.9 forge is installed download these mods: 
 - Supporter version of RoseGoldAddons ($1 USD): https://discord.com/invite/qol (must join the RoseGoldAddons discord server to receive your role so you can download the mod) https://sellix.io/product/61e8bf54dd6f6 (purchase the mod here) - message sincerity#0001 for support)
